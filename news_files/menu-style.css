@@ -1,0 +1,49 @@
+﻿
+
+/* 菜单栏样式*/
+ul.SlidingMenu {
+	list-style: none;
+	padding: 0em;
+	margin:0em;
+}
+
+ul.SlidingMenu a{
+	padding-top: 1.6em;
+	text-decoration: none;
+	color: #FFF;
+	outline: none;
+	height:80px;
+	width:130px;
+	text-align:center;
+	border-right:1px solid #052344;
+}
+
+ul.Horizontal li {
+	float: right;
+	height:100px;
+	width:130px;
+}
+ul.Horizontal li:hover{
+	background:#211737;
+}
+
+.ClearFix {
+	clear: both;
+}
+#HorizontalSlidingMenu {
+	height:100px;
+	margin-right:80px;
+}
+
+/*#HorizontalSlidingMenu li.Background {*/
+	/*background: url('../images/bg_menu_right.png') top right no-repeat;*/
+/*}*/
+#HorizontalSlidingMenu li.Background div {
+	background: url('../images/bg_menu.png') top left no-repeat;
+	height: 100%;
+	margin-right: 31px;
+}
+
+/*#HorizontalSlidingMenu li.Background {*/
+	/*background: url('../images/bg_menu.png') top center repeat-x;*/
+/*}*/

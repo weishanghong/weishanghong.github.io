@@ -1,0 +1,400 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px;">
+<!--DOCTaYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"-->
+
+<title>动态新闻</title>
+<meta name="author" content="魏尚鸿">
+<meta name="keywords" content="紫金云,紫金云大数据,甘肃紫金云,大数据,大数据技术,大数据分析,大数据应用,大数据公司,大数据解决方案">
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="news_files/menu-style.css">
+<link rel="stylesheet" href="news_files/main-style.css" type="text/css">
+<link rel="stylesheet" href="news_files/css.css" type="text/css">
+<link href="news_files/menu-style.css" rel="stylesheet">
+<script type="text/javascript" src="news_files/jquery-1.4.1.min.js.下载"></script>
+<script type="text/javascript" src="news_files/jquery.sliding-menu.js.下载"></script>
+<script type="text/javascript" src="news_files/jquery.page.js.下载"></script>
+<script type="text/javascript" src="news_files/jquery.kkpages.js.下载"></script>
+<script type="text/javascript">
+    $(function () {
+
+        $('.tp1').hide();
+        $('.tp2').hide();
+        $('.tp3').hide();
+        $('.tp4').hide();
+        $('.tp5').hide();
+
+        $('#HorizontalSlidingMenu .SlidingMenu').slidingMenu();
+        $('.ca-item-top').click(function () {
+            $('body').animate({scrollTop: 0}, 'slow');
+        });
+
+        $('.div-scheme-title').children("div").each(function (i, e) {
+            $(e).click(function () {
+                var classN = $(this).attr('class').split('-')[0];
+                var divN = $(this).attr('rel');
+                $('#' + divN).fadeIn();
+                $(this).addClass(classN + '-active');
+                $(this).siblings().each(function (i, c) {
+                    var _class = $(c).attr('class').split('-')[0];
+                    var _div = $(c).attr('rel');
+                    $('#' + _div).fadeOut();
+                    $(c).removeClass().addClass(_class);
+                });
+            });
+        });
+
+
+        $('#div-notice').kkPages({
+            PagesClass: '#notice', //需要分页的元素
+            PagesMth: 3, //每页显示个数
+            PagesNavMth: 5 //显示导航个数
+        });
+
+
+        $('#div-dynamic').kkPages({
+            PagesClass: '#dynamic', //需要分页的元素
+            PagesMth: 3, //每页显示个数
+            PagesNavMth: 5 //显示导航个数
+        });
+
+
+        $('#item_right1 .content').each(function (i, e) {
+            var length = $(e).text().length;
+            if (length > 300) {
+                var _text = $(e).text().substring(0, 300) + "...";
+                var _a = '<a href="">查看详细</a>';
+                $(e).text(_text);
+                $(e).append('<a href="index6-detail1.html">查看详细</a>');
+            }
+            ;
+        });
+
+
+        $('#item_right2 .content').each(function (i, e) {
+            var length = $(e).text().length;
+            if (length > 300) {
+                var _text = $(e).text().substring(0, 300) + "...";
+                var _a = '<a href="">查看详细</a>';
+                $(e).text(_text);
+                $(e).append('<a href="index6-detail2.html">查看详细</a>');
+            }
+            ;
+        });
+    });
+
+</script>
+<!-- 两图标 -->
+<div class="ca-item-dimension"></div>
+<div class="ca-item-top"></div>
+<!-- 菜单 -->
+<div class="div-menu alpha">
+    <!-- 左边 -->
+    <div class="div-menu-left">
+        <img src="news_files/logo.png">
+    </div>
+    <!-- 右边 -->
+    <div class="div-menu-right">
+        <div id="HorizontalSlidingMenu">
+            <ul class="SlidingMenu Horizontal" style="position: relative;">
+                <li class="Background"
+                    style="top: 0px; left: 579px; position: absolute; z-index: 0; width: 130px; height: 100px; opacity: 0;">
+                    <div></div>
+                </li>
+                <li><a href="contact_us.html" style="display: inline-block; position: relative;"><span class="f-style1">联系</span><br><span
+                        class="f-style2">CONTACT US</span></a></li>
+                <li><a href="about_us.html" style="display: inline-block; position: relative;"><span
+                        class="f-style1">我们</span><br><span class="f-style2">ABOUT US</span></a></li>
+                <li class="  activ-menu" id="activ"><a href="news.html" ;><span class="f-style1">新闻</span><br><span
+                        class="f-style2">NEWS</span></a></li>
+                <li><a href="service.html" style="display: inline-block; position: relative;"><span
+                        class="f-style1">服务</span><br><span class="f-style2">SERVICE</span></a></li>
+                <li><a href="scheme.html" style="display: inline-block; position: relative;"><span
+                        class="f-style1">方案</span><br><span class="f-style2">SCHEMES</span></a></li>
+                <li><a href="product.html" style="display: inline-block; position: relative;"><span
+                        class="f-style1">产品</span><br><span class="f-style2">PRODUCTS</span></a></li>
+                <li class="bor-left"><a href="index.html" style="display: inline-block; position: relative;"><span
+                        class="f-style1">首页</span><br><span class="f-style2">HOME</span></a></li>
+            </ul>
+            <div class="ClearFix"></div>
+        </div>
+    </div>
+    <div class="ClearFix"></div>
+</div>
+<!-- 包裹 -->
+<div id="div-body">
+    <!-- 图片切换 -->
+    <div class="div-slide" style="background:url(&#39;images/news_d_bg.jpg&#39;) center center no-repeat;"></div>
+    <!-- 产品&方案 -->
+    <div class="div-scheme" style="height:auto;">
+        <!-- 公司新闻 -->
+        <!-- group -->
+        <div id="div-notice" class="div-scheme-body" style="height:auto;">
+            <!-- group -->
+            <div id="notice" class="list-item" style="height:auto;">
+                <div class="item_left">
+                    <div class="date">
+                        <img src="news_files/1-1.jpg">
+                    </div>
+                </div>
+                <div class="item_right">
+                    <div class="title">
+                        <h3><a href="news_info_1.html">紫金云公司党支部开展庆祝中国共产党成立97周年系列活动</a></h3>
+                        <span>2018-07-01</span>
+                    </div>
+                    <div class="content_show">
+                        <p>
+                            2018年7月1日，是中国共产党97岁生日。为了庆祝中国共产党成立97周年，传承革命传统，弘扬红色精神，激励广大党员不忘初心、牢记使命，为共产主义事业奋斗终生；激励党外广大干部群众以习近平新时代中国特色社会主义思想为指引，更好地完成紫金云基建期各项工作。公司党支部书记张发虎同志带领党支部党员和党外群众干部开展了庆祝中国共产党成立97周年系列活动。</p>
+                    </div>
+                    <div class="item-line"></div>
+                </div>
+            </div>
+
+            <div id="notice" class="list-item" style="height:auto;">
+                <div class="item_left">
+                    <div class="date">
+                        <img src="news_files/2-1.jpg">
+                    </div>
+                </div>
+                <div class="item_right">
+                    <div class="title">
+                        <h3><a href="news_info_2.html">【安全月活动】安全教育开课啦</a>
+                        </h3>
+                        <span>2018-06-13</span>
+                    </div>
+                    <div class="content_show">
+                        <p>
+                            在安全生产活动月，公司积极开展各项安全生产系列活动。6月13日，公司组织新员工及参建单位管理人员进行安全教育培训。培训内容以施工安全为主，培训老师与工程技术部安全员分别结合事故案例和法律法规条文，深刻剖析事故发生原因，并总结经验教训，让参会人员从思想认识和思维模式上求得共识。</p>
+                    </div>
+                    <div class="item-line"></div>
+                </div>
+            </div>
+
+            <div id="notice" class="list-item" style="height:auto;">
+                <div class="item_left">
+                    <div class="date">
+                        <img src="news_files/3-1.jpg">
+                    </div>
+                </div>
+                <div class="item_right">
+                    <div class="title">
+                        <h3><a href="news_info_3.html">公司组织新员工开展入职培训与安全教育</a></h3>
+                        <span>2018-06-12</span>
+                    </div>
+                    <div class="content_show">
+                        <p>
+                            6月12日-6月13日，公司对新员工开展了为期两天的入职培训，参加培训的员工近30人，副总经理杨大利对员工进行了培训，培训内容分为“新员工入职基本培训、保密工作培训、员工行为规范”三大主题。主要目的是为了加强新员工对企业的认知，同时提高员工的行为规范和保密意识。 </p>
+                    </div>
+                    <div class="item-line"></div>
+                </div>
+            </div>
+
+            <div id="notice" class="list-item" style="height:auto;">
+                <div class="item_left">
+                    <div class="date">
+                        <img src="news_files/4-1.jpg">
+                    </div>
+                </div>
+                <div class="item_right">
+                    <div class="title">
+                        <h3><a href="news_info_4.html">【安全月活动】安全月，我们在行动！</a></h3>
+                        <span>2018-06-01</span>
+                    </div>
+                    <div class="content_show">
+                        <p>6月1日，公司举行全国第十七个“安全生产月”启动会，启动会由公司副总经理杨大利主持，公司领导、全体员工以及各施工单位参加了此次启动会。</p>
+                    </div>
+                    <div class="item-line"></div>
+                </div>
+            </div>
+
+            <div id="notice" class="list-item" style="height: auto; padding-bottom: 40px; display: none;">
+                <div class="item_left">
+                    <div class="date">
+                        <img src="news_files/5-1.jpg">
+                    </div>
+                </div>
+                <div class="item_right">
+                    <div class="title">
+                        <h3><a href="news_info_5.html">金昌市项目重大办督查组一行对紫金云公司项目建设工作进行督查</a></h3>
+                        <span>2018-05-31</span>
+                    </div>
+                    <div class="content_show">
+                        <p>
+                            5月31日，由金昌市发改委主任吴玉珍带队的项目重大办督查组来紫金云公司督查项目建设。在公司领导及相关部门负责人的陪同下，督查组一行深入施工现场，对数据中心、动力中心、维护支撑中心以及调度中心进行现场了解，督查了项目进展情况。吴玉珍主任强调要切实加强施工现场安全生产管控，推进工程进度，确保如期完成项目建设。</p>
+                    </div>
+                    <div class="item-line"></div>
+                </div>
+            </div>
+
+            <div id="notice" class="list-item" style="height: auto; padding-bottom: 40px; display: none;">
+                <div class="item_left">
+                    <div class="date">
+                        <img src="news_files/6-1.jpg">
+                    </div>
+                </div>
+                <div class="item_right">
+                    <div class="title">
+                        <h3><a href="news_info_6.html">省国资委第十二监事会一行到紫金云公司检查指导工作</a></h3>
+                        <span>2018-05-30</span>
+                    </div>
+                    <div class="content_show">
+                        <p>
+                            5月30日，省国资委第十二监事会主席王春丁与处长陈其兵来紫金云公司进行监督检查。在公司领导及相关部门负责人的陪同下深入施工现场，对数据中心、动力中心、维护支撑中心以及调度中心等项目建设现场进行查看，就工程进度、区域规划、施工安全一一进行了询问并给予了指导。
+                        </p>
+                    </div>
+                    <div class="item-line"></div>
+                </div>
+            </div>
+
+            <div id="notice" class="list-item" style="height: auto; padding-bottom: 40px; display: none;">
+                <div class="item_left">
+                    <div class="date">
+                        <img src="news_files/7-1.jpg">
+                    </div>
+                </div>
+                <div class="item_right">
+                    <div class="title">
+                        <h3><a href="news_info_7.html">省政府参事室调研紫金云大数据公司项目建设工作</a></h3>
+                        <span>2018-05-28</span>
+                    </div>
+                    <div class="content_show">
+                        <p>5月28日，省政府参事、原省属国有企业监事会主席魏秀鸿一行来紫金云公司调研指导工作，金昌市政府有关领导陪同调研，公司领导及相关部门负责人现场介绍了相关情况。</p>
+                    </div>
+                    <div class="item-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="div-footer">
+        <div class="div-footer-content">
+            <div class="item" style="margin-left:0px;">
+                <div class="item-title">
+                    产品
+                </div>
+                <div class="item-content p-top-15">
+                    <a href="product.html">大数据融合</a>
+                </div>
+                <div class="item-content p-top-5">
+                    <a href="product.html">大数据服务支撑</a>
+                </div>
+                <div class="item-content p-top-5">
+                    <a href="product.html">大数据基础应用</a>
+                </div>
+                <div class="item-content p-top-5">
+                    <a href="product.html">大数据专题应用</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    方案
+                </div>
+                <div class="item-content p-top-15">
+                    <a href="scheme.html">"大数据+垂直领域"解决方案</a>
+                </div>
+                <div class="item-content p-top-5">
+                    <a href="scheme.html">"大数据+政务领域"解决方案</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    服务
+                </div>
+                <div class="item-content p-top-15">
+                    <a href="service.html">服务理念</a>
+                </div>
+                <div class="item-content p-top-5">
+                    <a href="service.html">服务方式</a>
+                </div>
+                <div class="item-content p-top-5">
+                    <a href="service.html">媒体热点</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    新闻
+                </div>
+                <div class="item-content p-top-15">
+                    <a href="news.html">行业新闻</a>
+                </div>
+                <div class="item-content p-top-5">
+                    <a href="news.html">公司新闻</a>
+                </div>
+                <div class="item-content p-top-5">
+                    <a href="news.html">公司文化</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    我们
+                </div>
+                <div class="item-content p-top-15">
+                    <a href="about_us.html">公司简介</a>
+                </div>
+                <div class="item-content p-top-5">
+                    <a href="news.html">企业文化</a>
+                </div>
+                <div class="item-content p-top-5">
+                    <a href="contact_us.html">联系我们</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="logo-content">
+                    <div style="margin-bottom:10px;">
+                        <img src="news_files/logo-footer.png">
+                    </div>
+                    <div class="logo1 p-top-5 t-indent-20">
+                        公司地址：甘肃省金昌市金川区经济技术开发区福州路北段
+                    </div>
+                    <div class="logo2 p-top-5 t-indent-20">
+                        商务热线：**********
+                    </div>
+                    <div class="logo3 p-top-5 t-indent-20">
+                        传真电话：**********
+                    </div>
+                </div>
+            </div>
+            <div class="ClearFix"></div>
+        </div>
+        <div class="copyright">
+            版权所有 Copyright(C)2018 甘肃紫金云大数据开发有限责任公司
+        </div>
+        <div style="text-align:center; font-size:15px; color:#C8C8C8;">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=**********"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><p nowrap=""
+                                                                                                  style="float:right;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
+                甘公网安备 **********号</p></a>
+            <a target="_blank" href="http://www.miitbeian.gov.cn/"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><p nowrap=""
+                                                                                                  style="float:right;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
+                陇ICP备**********</p></a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    $('.a1').click(function () {
+
+        $(".tp1").toggle();
+    });
+
+    $('.a2').click(function () {
+        $(".tp2").toggle();
+    });
+
+    $('.a3').click(function () {
+        $(".tp3").toggle();
+    });
+
+    $('.a4').click(function () {
+        $(".tp4").toggle();
+    });
+
+    $('.a5').click(function () {
+        $(".tp5").toggle();
+    });
+</script>
+</body>
+</html>

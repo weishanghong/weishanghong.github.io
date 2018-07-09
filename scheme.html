@@ -1,0 +1,357 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>解决案例</title>
+    <meta name="author" content="魏尚鸿">
+    <meta name="keywords" content="紫金云,紫金云大数据,甘肃紫金云,大数据,大数据技术,大数据分析,大数据应用,大数据公司,大数据解决方案">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="scheme_files/menu-style.css" type="text/css">
+    <link rel="stylesheet" href="scheme_files/main-style.css" type="text/css">
+    <script type="text/javascript" src="scheme_files/jquery-1.4.1.min.js.下载"></script>
+    <script type="text/javascript" src="scheme_files/jquery.sliding-menu.js.下载"></script>
+    <style>
+        .schemeCategoryNav {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .schemeCategory {
+            display: inline-block;
+            width: 300px;
+            height: 80px;
+            line-height: 80px;
+            font-size: 25px;
+            border-radius: 10px;
+            margin-left: 30px;
+            cursor: pointer;
+            color: #A3A3A3;
+            background: #DDDDDD;
+        }
+
+        .active {
+            color: #ffffff;
+            background: #009EDD;
+        }
+
+        .item_left_img {
+            height: 131px;
+            margin-top: 20px;
+        }
+
+        .scheme-text {
+            width: 950px;
+            margin: 0 auto;
+            font-size: 16px;
+            text-align: center;
+            line-height: 30px;
+            padding: 20px 30px 0px;
+            color: #666666;
+        }
+
+        .scheme-title {
+            margin-top: 0px;
+            margin-bottom: 15px;
+            font-size: 24px;
+            font-family: inherit;
+            font-weight: 500;
+            line-height: 1.1;
+            color: inherit;
+        }
+
+        .scheme-content {
+            text-align: left;
+        }
+    </style>
+    <script type="text/javascript">
+        /* 查询url中是否有某个参数 */
+        function GetQueryString(param) {
+            var reg = new RegExp("(^|&)" + param + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
+
+        $(function () {
+            $('#HorizontalSlidingMenu .SlidingMenu').slidingMenu();
+            $('.ca-item-top').click(function () {
+                $('body').animate({
+                    scrollTop: 0
+                }, 'slow');
+            });
+
+            $(".schemeCategory").mouseover(function () {
+                var index = $(this).index();
+                var b = $(".schemeCategory").eq(index).hasClass("active");
+                if (!b) {
+                    $(".schemeCategory").removeClass("active");
+                    $(".schemeCategory").eq(index).addClass("active");
+                    $(".div-scheme-body").fadeOut(500);
+                    $("#category" + index).fadeIn(500);
+                }
+            });
+
+            var flag = GetQueryString("flag");
+            if (flag != null && flag.toString().length > 1) {
+                $("#public_safe").removeClass("active");
+                $("#government").addClass("active");
+                $(".div-scheme-body").fadeOut(500);
+                $("#category1").fadeIn(500);
+            }
+        });
+    </script>
+</head>
+
+<body style="margin:0px;padding:0px;background:#211737;">
+
+<!-- 两图标 -->
+<div class="ca-item-dimension"></div>
+<div class="ca-item-top"></div>
+
+<!-- 菜单 -->
+<div class="div-menu alpha">
+    <!-- 左边 -->
+    <div class="div-menu-left">
+        <img src="scheme_files/logo.png">
+    </div>
+    <!-- 右边 -->
+    <div class="div-menu-right">
+        <div id="HorizontalSlidingMenu">
+            <ul class="SlidingMenu Horizontal" style="position: relative;">
+                <li class="Background"
+                    style="top: 0px; left: 873px; position: absolute; z-index: 0; display: block; width: 130px; height: 100px; overflow: hidden; opacity: 0;">
+                    <div></div>
+                </li>
+                <li>
+                    <a href="contact_us.html" style="display: inline-block; position: relative;"><span class="f-style1">联系</span><br><span
+                            class="f-style2">CONTACT US</span></a>
+                </li>
+                <li>
+                    <a href="about_us.html" style="display: inline-block; position: relative;"><span
+                            class="f-style1">我们</span><br><span class="f-style2">ABOUT US</span></a>
+                </li>
+                <li>
+                    <a href="news.html" style="display: inline-block; position: relative;"><span
+                            class="f-style1">新闻</span><br><span class="f-style2">NEWS</span></a>
+                </li>
+                <li>
+                    <a href="service.html" style="display: inline-block; position: relative;"><span
+                            class="f-style1">服务</span><br><span class="f-style2">SERVICE</span></a>
+                </li>
+                <li class="  activ-menu" id="activ">
+                    <a href="scheme.html" style="display: inline-block; position: relative;"><span
+                            class="f-style1">方案</span><br><span class="f-style2">SCHEMES</span></a>
+                </li>
+                <li>
+                    <a href="product.html" style="display: inline-block; position: relative;"><span
+                            class="f-style1">产品</span><br><span class="f-style2">PRODUCTS</span></a>
+                </li>
+                <li class="bor-left">
+                    <a href="index.html" style="display: inline-block; position: relative;"><span
+                            class="f-style1">首页</span><br><span class="f-style2">HOME</span></a>
+                </li>
+            </ul>
+            <div class="ClearFix"></div>
+        </div>
+    </div>
+    <div class="ClearFix"></div>
+</div>
+
+<!-- 包裹 -->
+<div id="div-body">
+
+    <!-- 图片切换 -->
+    <div class="div-slide" style="background:url(&#39;images/case-solve-bg.jpg&#39;) center center no-repeat;"></div>
+
+    <div class="div-scheme" style="height:auto;">
+
+        <!-- 导航 -->
+        <div class="schemeCategoryNav">
+            <div id="public_safe" class="schemeCategory active">垂直领域</div>
+            <div id="government" class="schemeCategory">政务领域</div>
+        </div>
+        <!---->
+        <!-- 垂直领域 -->
+        <div id="category0" class="div-scheme-body" style="height:auto;">
+        </div>
+
+        <!-- 政府领域 -->
+        <div id="category1" class="div-scheme-body" style="height:auto;display: none;">
+
+            <div style="text-align: center;margin-top: 50px;">
+                <img src="scheme_files/scheme_title_01.png">
+            </div>
+
+            <!-- 现状与问题 -->
+            <div class="scheme-text">
+                <div>
+                    <p class="scheme-content" style="text-indent: 2em;">
+                        20世纪90年代以来，我国政府信息化建设经历了办公自动化、政府部门的电子化工程("金"字工程)、全面的政府上网工程三个阶段，进入高速发展时期；经过20多年的发展，我国政府信息化已经取得了阶段性成果，在快速发展的同时，政府各部门建设中也普遍存在一些问题，制约了信息化建设水平的进一步提升：
+                    </p>
+                    <p class="scheme-content">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）缺乏完整、科学的标准体系。<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）缺乏统一建设规划，"信息孤岛"现象导致数据资源共享程度不高，数据应用规模较小导致数据价值挖掘不足。
+                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）数据发现和应用能力需加强提升，缺乏动态感知、协调处置能力。
+                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（4）社会需求的不断变化也为信息化建设提出了新要求。
+                    </p>
+                </div>
+            </div>
+
+            <div style="text-align: center;margin-top: 50px;">
+                <img src="scheme_files/scheme_title_02.png">
+            </div>
+
+            <!-- group-->
+            <div class="list-item" style="height:auto;padding-bottom:40px;">
+                <div class="item_left item_left_img" style="margin-top: 35px;">
+                    <img src="scheme_files/scheme-zhengfu_1.png">
+                </div>
+
+                <div class="item_right">
+                    <div class="title">政务大数据</div>
+                    <div class="content" style="line-height: 24px;">
+                        政务大数据是遵循9+X社会综治的基础规范上，汇聚整合政务各成员单位各类业务信息、地理信息、视频信息、互联网信息等数据资源，形成多源异构的政务大数据中心，同时以资源整合、业务协同为原则，建设政务大数据一张图、社会形势预判、政务调度值守、社会舆情防控、指挥协同作战、领导指挥舱等业务，涵盖了社会管理、维稳、平安建设三大类业务内容，实现对政务的现有业务统一展示、统一整合、统一调度和统一指导。
+                    </div>
+                </div>
+            </div>
+
+            <!-- group-->
+            <div class="list-item" style="height:auto;padding-bottom:40px;">
+                <div class="item_left item_left_img" style="margin-top: 45px;">
+                    <img src="scheme_files/scheme-zhengfu_2.png">
+                </div>
+
+                <div class="item_right">
+                    <div class="title">宏观经济分析平台</div>
+                    <div class="content" style="line-height: 24px;">
+                        宏观经济分析平台的核心是围绕供给和需求两个大的方向展开。供给分析方面，本项目会从产业结构、企业状况、贸易状况、交通物流状况等方面展开。需求分析方面，本项目会从居民生活水平、居民消费水平、文化旅游市场、人口流动、房地产市场状况、甘肃省向外辐射影响力等方面分析。
+                    </div>
+                </div>
+            </div>
+
+            <!-- group-->
+            <!--<div class="list-item" style="height:auto;padding-bottom:40px;">-->
+            <!--<div class="item_left item_left_img" style="margin-top: 10px;">-->
+            <!--<img src="scheme_files/case-solve-item_8.png">-->
+            <!--</div>-->
+
+            <!--<div class="item_right">-->
+            <!--<div class="title">人口资源库系统</div>-->
+            <!--<div class="content" style="line-height: 24px;">在公安人口信息的基础上充分整合流管、计生、劳动社保等各职能部门的现有人口数据资源，建设人口基础信息库、信息交换共享平台和业务应用平台，实现全市人口基础信息的集中管理与充分共享，为各级政府职能部门、企事业单位和公民个人提供决策数据支持与人口信息服务等公共服务功能，并以此推进公民信用体系建设，提高政府的公共管理和服务水平。</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!-- group-->
+            <!--<div class="list-item" style="height:auto;padding-bottom:40px;">-->
+            <!--<div class="item_left item_left_img" style="margin-top: 10px;">-->
+            <!--<img src="scheme_files/case-solve-item_10.png">-->
+            <!--</div>-->
+
+            <!--<div class="item_right">-->
+            <!--<div class="title">流动人员与出租屋信息管理系统</div>-->
+            <!--<div class="content" style="line-height: 24px;">系统通过信息化手段采集流动人口、出租屋、居住证相关信息项，并建立对应的档案库进行管理。系统按“综合治理，以屋管人”的思路进行设计，实现人房关联、人企关联、人事关联、人人关联的管理应用模式，同时按 “人来登记，人走注销”的旅业式管理模式采集和维护信息，帮助信息鲜活度提升到较高水平。</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!-- group-->
+            <!--<div class="list-item" style="height:auto;padding-bottom:40px;">-->
+            <!--<div class="item_left item_left_img" style="margin-top: 20px;">-->
+            <!--<img src="scheme_files/case-solve-item_13.png">-->
+            <!--</div>-->
+
+            <!--<div class="item_right">-->
+            <!--<div class="title">食品安全溯源监管系统</div>-->
+            <!--<div class="content" style="line-height: 24px;">与经贸委、农业局、食药监局、疾控中心等食品安全业务系统进行数据共享交换，建设全面的、标准的、统一的食品安全数据中心，实现食品安全各环节监管数据的集中存储、管理和资源共享，为食品安全管理的监控监测、行政执法、风险评估与预警，以及应急事件发生时的情报汇聚、态势分析、综合研判、辅助决策、指挥调度提交数据支持；通过建立猪肉、蔬菜及其制品的溯源系统，探索构建食用农产品生产、流通、销售和餐饮服务全流程溯源监管体系。</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!-- group-->
+            <!--<div class="list-item" style="height:auto;padding-bottom:40px;">-->
+            <!--<div class="item_left item_left_img" style="margin-top: 20px;">-->
+            <!--<img src="scheme_files/case-solve-item_16.png">-->
+            <!--</div>-->
+
+            <!--<div class="item_right">-->
+            <!--<div class="title">运动会赛事管理系统</div>-->
+            <!--<div class="content" style="line-height: 24px;">该系统是针对大型运动会的综合信息化管理系统，包括赛事运行管理、赛事组织管理、基础管理、场馆安全运行管理、通信管理等几大模块。在赛前可帮助相关工作人员完成网上报名、比赛编排等工作，在运动会期间可协助进行证件管理等工作，比赛现场比分也可通过该系统采集、录入和进行即时发布，组委会管理人员可以通过电脑、手机和平板等设备随时掌握运动会的组织、比赛进展、场馆运行情况。</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <div style="text-align: center;margin-top: 50px;">
+                <img src="scheme_files/scheme_title_03.png">
+            </div>
+
+            <!-- 价值体现 -->
+            <div class="scheme-text" style="margin-bottom: 0px;">
+                <div>
+                    <p class="scheme-content">
+                        • 全面整合信息，实现政府内部跨地区、跨部门的信息资源共享与有效沟通。<br> • 节约信息采集的人力、物力、时间，提高办公效率。<br> •
+                        激活政府数据价值，服务政府治理、惠及民生，构建区域大数据产业生态。<br> • 实全面覆盖、反应快速、处置高效、动态跟踪、联动有力、管理到位、科学高效的现代化社会和谐稳定治理目标。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="div-footer">
+        <div class="div-footer-content">
+            <div class="item" style="margin-left:0px;">
+                <div class="item-title">产品</div>
+                <div class="item-content p-top-15"><a href="product.html">大数据融合</a></div>
+                <div class="item-content p-top-5"><a href="product.html">大数据服务支撑</a></div>
+                <div class="item-content p-top-5"><a href="product.html">大数据基础应用</a></div>
+                <div class="item-content p-top-5"><a href="product.html">大数据专题应用</a></div>
+            </div>
+            <div class="item">
+                <div class="item-title">方案</div>
+                <div class="item-content p-top-15"><a href="scheme.html">"大数据+垂直领域"解决方案</a></div>
+                <div class="item-content p-top-5"><a href="scheme.html">"大数据+政务领域"解决方案</a></div>
+
+            </div>
+            <div class="item">
+                <div class="item-title">服务</div>
+                <div class="item-content p-top-15"><a href="service.html">服务理念</a></div>
+                <div class="item-content p-top-5"><a href="service.html">服务方式</a></div>
+                <div class="item-content p-top-5"><a href="service.html">媒体热点</a></div>
+            </div>
+            <div class="item">
+                <div class="item-title">新闻</div>
+                <div class="item-content p-top-15"><a href="news.html">行业新闻</a></div>
+                <div class="item-content p-top-5"><a href="news.html">公司新闻</a></div>
+                <div class="item-content p-top-5"><a href="news.html">公司文化</a></div>
+            </div>
+            <div class="item">
+                <div class="item-title">我们</div>
+                <div class="item-content p-top-15"><a href="about_us.html">公司简介</a></div>
+                <div class="item-content p-top-5"><a href="news.html">企业文化</a></div>
+                <div class="item-content p-top-5"><a href="contact_us.html">联系我们</a></div>
+            </div>
+            <div class="item">
+                <div class="logo-content">
+                    <div style="margin-bottom:10px;"><img src="scheme_files/logo-footer.png"></div>
+                    <div class="logo1 p-top-5 t-indent-20">公司地址：甘肃省金昌市金川区经济技术开发区福州路北段</div>
+                    <div class="logo2 p-top-5 t-indent-20">商务热线/投诉电话：********</div>
+                    <div class="logo3 p-top-5 t-indent-20">传真电话：********</div>
+                </div>
+            </div>
+            <div class="ClearFix"></div>
+        </div>
+        <div class="copyright">版权所有 Copyright(C)2018 甘肃紫金云大数据开发有限责任公司</div>
+        <div style="text-align:center; font-size:15px; color:#C8C8C8;">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=**********"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <p nowrap="" style="float:right;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
+                    甘公网安备 **************号</p>
+            </a>
+            <a target="_blank" href="http://www.miitbeian.gov.cn/"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <p nowrap="" style="float:right;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
+                    陇ICP备**********</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

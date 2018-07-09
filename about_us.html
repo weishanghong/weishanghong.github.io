@@ -1,0 +1,296 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>关于我们</title>
+    <meta name="author" content="魏尚鸿">
+    <meta name="keywords" content="紫金云,紫金云大数据,甘肃紫金云,大数据,大数据技术,大数据分析,大数据应用,大数据公司,大数据解决方案">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="about_us_files/menu-style.css" type="text/css">
+    <link rel="stylesheet" href="about_us_files/view-style.css" type="text/css">
+    <link rel="stylesheet" href="about_us_files/main-style.css" type="text/css">
+    <script type="text/javascript" src="about_us_files/jquery-1.4.1.min.js.下载"></script>
+    <script type="text/javascript" src="about_us_files/jquery.sliding-menu.js.下载"></script>
+    <script type="text/javascript" src="about_us_files/idangerous.swiper.min.js.下载"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#HorizontalSlidingMenu .SlidingMenu').slidingMenu();
+
+            var mySwiper = new Swiper('.swiper-container', {
+                loop: false,
+                grabCursor: false,
+                paginationClickable: true
+            });
+            $('.arrow-left').live('click', function (e) {
+                e.preventDefault()
+                mySwiper.swipePrev()
+            });
+            $('.arrow-right').live('click', function (e) {
+                e.preventDefault()
+                mySwiper.swipeNext()
+            });
+            $('.ca-item-top').click(function () {
+                $('body').animate({scrollTop: 0}, 'slow');
+            });
+
+
+            $('div.block').hover(
+                function () {
+                    $(this).find('a').css('color', 'white');
+                    var $img = $(this).find('img.span-img');
+                    var src_array = $img.attr('src').split('.');
+                    var new_src = src_array[0] + '-2.' + src_array[1];
+                    $img.attr('src', new_src);
+
+                }, function () {
+                    $(this).find('a').css('color', 'gray');
+                    var $img = $(this).find('img.span-img');
+                    var src_array = $img.attr('src').split('.');
+                    var new_src = src_array[0].replace('-2', '') + '.' + src_array[1];
+                    $img.attr('src', new_src);
+                }
+            );
+        });
+    </script>
+
+
+</head>
+<body>
+<!-- 两图标 -->
+<div class="ca-item-dimension"></div>
+<div class="ca-item-top"></div>
+
+<!-- 菜单 -->
+<div class="div-menu alpha">
+    <!-- 左边 -->
+    <div class="div-menu-left">
+        <img src="about_us_files/logo.png">
+    </div>
+    <!-- 右边 -->
+    <div class="div-menu-right">
+        <div id="HorizontalSlidingMenu">
+            <ul class="SlidingMenu Horizontal" style="position: relative;">
+                <li class="Background"
+                    style="top: 0px; left: 1263px; position: absolute; z-index: 0; display: block; width: 130px; height: 100px; overflow: hidden; opacity: 0;">
+                    <div></div>
+                </li>
+                <li><a href="contact_us.html" style="display: inline-block; position: relative;"><span class="f-style1">联系</span><br><span
+                        class="f-style2">CONTACT US</span></a></li>
+                <li class="  activ-menu" id="activ"><a href="about_us.html"
+                                                       style="display: inline-block; position: relative;"><span
+                        class="f-style1">我们</span><br><span class="f-style2">ABOUT US</span></a></li>
+                <li><a href="news.html" style="display: inline-block; position: relative;"><span
+                        class="f-style1">新闻</span><br><span class="f-style2">NEWS</span></a></li>
+                <li><a href="service.html" style="display: inline-block; position: relative;"><span
+                        class="f-style1">服务</span><br><span class="f-style2">SERVICE</span></a></li>
+                <li><a href="scheme.html" style="display: inline-block; position: relative;"><span
+                        class="f-style1">方案</span><br><span class="f-style2">SCHEMES</span></a></li>
+                <li><a href="product.html" style="display: inline-block; position: relative;"><span
+                        class="f-style1">产品</span><br><span class="f-style2">PRODUCTS</span></a></li>
+                <li class="bor-left"><a href="index.html" style="display: inline-block; position: relative;"><span
+                        class="f-style1">首页</span><br><span class="f-style2">HOME</span></a></li>
+            </ul>
+            <div class="ClearFix"></div>
+        </div>
+    </div>
+    <div class="ClearFix"></div>
+</div>
+
+<!-- 包裹 -->
+<div id="div-body">
+
+    <!-- 图片切换 -->
+    <div class="div-slide" style="background:url(&#39;images/about-us-bg.jpg&#39;) center center no-repeat;"></div>
+
+    <!-- 公司简介 -->
+    <div class="div-head" style="height:auto;">
+        <div class="div-head-title">
+            <img src="about_us_files/about-us-1.png" style="margin-top:50px;">
+        </div>
+
+        <div class="div-head-body"
+             style="margin:0px 10%;color:gray;line-height:28px;font-size:16px;height:auto;border-bottom:1px solid #EEEEEE;">
+            甘肃紫金云大数据园区位于金昌市经济技术开发区，规划总用地面积3568亩。<br><br>
+            产业园以数据中心建设为龙头，以研发协同产业带、互联网+产业带、云计算产业带、大数据产业带、外包服务产业带等五大产业带的构建为主线。<br><br>
+            重点打造数据中心基地、研发协同基地、互联网基地、电商物流基地、大数据服务基地、展示体验基地、外包服务基地和离岸数据基地等八大基地。<br><br>
+            力争将园区建设成具有5万个机柜的全国级数据产业园区，助力甘肃省成为“丝绸之路经济带”互联网的重要通道和面向中西亚、中东欧及蒙古的通信枢纽和区域信息汇集中心。<br><br>
+            公司主要业务是利用大数据技术，提供数据处理、大数据存储、资源管理、分布式全文检索、知识图谱化、关系挖掘分析、机器学习、可视化展现和分析等服务，是大数据一体化应用平台的开拓者和领导者。<br><br>
+            经营范围包括数据生产、存储、处理、远程容灾、分析、研发；云计算、IT服务、IDC服务、软件开发及服务外包、数字内容服务与创意、地理信息、“互联网+”产业服务。<br><br>
+            企业定位：<br>
+            ● 甘肃省大数据中心<br>
+            ● 国家级数据灾备中心<br>
+
+            项目优势：<br>
+            ● 区位优势：处于丝绸之路经济带甘肃黄金段中部，充裕的宽带资源积极支持，低成本的土地，地势平坦，气温适宜。<br>
+            ● 能源优势：既有电源保障，又有售电公司运作，最大幅度降低用电成本。<br>
+            ● 政策优势：国家及我省大数据产业政策及规划对项目的支持。<br>
+            ● 发展路径优势：控股单位政策优势，政策和数据资源支持，人才技术支持。<br>
+
+            发展愿景：<br>
+            ● 国家“一带一路”战略及甘肃省“丝绸之路经济带”实施的重要互联网数据通道。<br>
+            ● 面向中西亚、中东欧及蒙古的通信枢纽和区域信息汇集中心。<br>
+            ● 全国重要的云计算产业聚集区和国家数据灾备的重要承载节点。<br>
+            ● 国家大数据布局西部地区的重要节点。<br>
+            ● 立足甘肃、面向全国，国内技术一流、管理先进的超大型数据中心。<br>
+            诚邀您加入紫金云大数据公司团队！<br>
+            地址：甘肃省金昌市金川区经济技术开发区福州路北段。<br>
+            联系人：***<br>
+            电话：**********<br><br>
+
+        </div>
+    </div>
+
+    <!-- 公司理念 -->
+    <div class="div-head" style="height:auto;">
+        <div class="div-head-title">
+            <img src="about_us_files/about-us-2.png" style="margin-top:50px;">
+        </div>
+
+        <div class="div-head-body"
+             style="margin:0px 10%;height:250px;text-align:center;border-bottom:1px solid #EEEEEE;">
+            <div class="img-item">
+                <img src="about_us_files/about-us-img2.png">
+                <span>上级为下级服务</span>
+            </div>
+            <div class="img-item">
+                <img src="about_us_files/about-us-img3.png">
+                <span>部门间相互服务</span>
+            </div>
+            <div class="img-item">
+                <img src="about_us_files/about-us-img4.png">
+                <span>自觉为一线服务</span>
+            </div>
+            <div class="img-item">
+                <img src="about_us_files/about-us-img1.png">
+                <span>全体为客户服务</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 证书与荣誉 -->
+    <div class="div-head" style="height:auto;">
+        <div class="div-head-title">
+            <img src="about_us_files/about-us-3.png" style="margin-top:50px;">
+        </div>
+
+        <!--<div class="div-head-body" style="height:600px;border-bottom:1px solid #EEEEEE;margin:0px 10%;">-->
+
+        <!--<div class="device" style="width:1200px;margin:0 auto;height:520px;">-->
+        <!--
+        <a class="arrow-left" href="#"></a>
+        <a class="arrow-right" href="#"></a>
+        -->
+        <!--<div class="swiper-container" style="height:520px;">-->
+        <!--<div class="swiper-wrapper" style="width: 1200px; height: 520px;">-->
+        <!--<div class="swiper-slide swiper-slide-visible swiper-slide-active" style="background: url(&quot;images/honor_1.jpg&quot;) center center no-repeat; width: 1200px; height: 520px;"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--</div>-->
+    </div>
+
+    <!-- 核心业务 -->
+    <div class="div-head" style="height:auto;">
+        <div class="div-head-title">
+            <img src="about_us_files/about-us-4.png" style="margin-top:50px;">
+        </div>
+
+        <div class="div-head-body" style="height:450px;text-align:center;">
+            <div class="business-item">
+                <div class="block">
+						<span>
+							<!--<img class="span-img" src="about_us_files/business_icon_1.png">-->
+							<span class="item-title">大数据+垂直领域</span>
+						</span>
+                    <div class="list-item" style="height:200px;">
+                        <div class="item t-indent-35"><a href="scheme.html">商贸物流领域</a></div>
+                        <div class="item t-indent-35"><a href="scheme.html">生态文明领域</a></div>
+                        <div class="item t-indent-35"><a href="scheme.html">人文交流领域</a></div>
+                        <div class="item t-indent-35"><a href="scheme.html">智慧社会领域</a></div>
+                        <div class="item t-indent-35"><a href="scheme.html">国家安全领域</a></div>
+                        <div class="ClearFix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="business-item">
+                <div class="block">
+						<span>
+							<!--<img class="span-img" src="about_us_files/business_icon_2.png">-->
+							<span class="item-title">大数据+政务领域</span>
+						</span>
+                    <div class="list-item" style="height:200px;">
+                        <div class="item t-indent-35"><a href="scheme.html">精准扶贫领域</a></div>
+                        <div class="item t-indent-35"><a href="scheme.html">城市管理领域</a></div>
+                        <div class="item t-indent-35"><a href="scheme.html">智慧教育领域</a></div>
+                        <div class="item t-indent-35"><a href="scheme.html">能源管理领域</a></div>
+                        <div class="ClearFix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="div-footer">
+        <div class="div-footer-content">
+            <div class="item" style="margin-left:0px;">
+                <div class="item-title">产品</div>
+                <div class="item-content p-top-15"><a href="product.html">大数据融合</a></div>
+                <div class="item-content p-top-15"><a href="product.html">大数据服务支撑</a></div>
+                <div class="item-content p-top-15"><a href="product.html">大数据基础应用</a></div>
+                <div class="item-content p-top-15"><a href="product.html">大数据专题应用</a></div>
+            </div>
+            <div class="item">
+                <div class="item-title">方案</div>
+                <div class="item-content p-top-15"><a href="scheme.html">"大数据+垂直领域"解决方案</a></div>
+                <div class="item-content p-top-5"><a href="scheme.html">"大数据+政务领域"解决方案</a></div>
+
+            </div>
+            <div class="item">
+                <div class="item-title">服务</div>
+                <div class="item-content p-top-15"><a href="service.html">服务理念</a></div>
+                <div class="item-content p-top-5"><a href="service.html">服务方式</a></div>
+                <div class="item-content p-top-5"><a href="service.html">媒体热点</a></div>
+            </div>
+            <div class="item">
+                <div class="item-title">新闻</div>
+                <div class="item-content p-top-15"><a href="news.html">行业新闻</a></div>
+                <div class="item-content p-top-5"><a href="news.html">公司新闻</a></div>
+                <div class="item-content p-top-5"><a href="news.html">公司文化</a></div>
+            </div>
+            <div class="item">
+                <div class="item-title">我们</div>
+                <div class="item-content p-top-15"><a href="about_us.html">公司简介</a></div>
+                <div class="item-content p-top-5"><a href="news.html">企业文化</a></div>
+                <div class="item-content p-top-5"><a href="contact_us.html">联系我们</a></div>
+            </div>
+            <div class="item">
+                <div class="logo-content">
+                    <div style="margin-bottom:10px;"><img src="about_us_files/logo-footer.png"></div>
+                    <div class="logo1 p-top-5 t-indent-20">公司地址：甘肃省金昌市金川区经济技术开发区福州路北段</div>
+                    <div class="logo2 p-top-5 t-indent-20">商务热线/投诉电话：**********</div>
+                    <div class="logo3 p-top-5 t-indent-20">传真电话：**********</div>
+                </div>
+            </div>
+            <div class="ClearFix"></div>
+        </div>
+        <div class="copyright">版权所有 Copyright(C)2018 甘肃紫金云大数据开发有限责任公司</div>
+        <div style="text-align:center; font-size:15px; color:#C8C8C8;">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=**********"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <p nowrap="" style="float:right;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
+                    甘公网安备 **********号</p>
+            </a>
+            <a target="_blank" href="http://www.miitbeian.gov.cn/"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <p nowrap="" style="float:right;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
+                    陇ICP备**********</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

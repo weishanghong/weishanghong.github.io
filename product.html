@@ -1,0 +1,398 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>产品与业务</title>
+    <meta name="author" content="魏尚鸿">
+    <meta name="keywords" content="紫金云,紫金云大数据,甘肃紫金云,大数据,大数据技术,大数据分析,大数据应用,大数据公司,大数据解决方案">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="product_files/menu-style.css" type="text/css">
+    <link rel="stylesheet" href="product_files/main-style.css" type="text/css">
+    <script type="text/javascript" src="product_files/jquery-1.4.1.min.js.下载"></script>
+    <script type="text/javascript" src="product_files/jquery.sliding-menu.js.下载"></script>
+    <style>
+        .productCategoryNav {
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .productCategory {
+            display: inline-block;
+            width: 22%;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            font-size: 25px;
+            border-radius: 5px;
+            margin-left: 2%;
+            cursor: pointer;
+            color: #A3A3A3;
+            background: #DDDDDD;
+        }
+
+        .active {
+            color: #ffffff;
+            background: #009EDD;
+        }
+
+        .item_left_img {
+            height: 131px;
+            margin-top: 20px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $('#HorizontalSlidingMenu .SlidingMenu').slidingMenu();
+            $('.ca-item-top').click(function () {
+                $('body').animate({
+                    scrollTop: 0
+                }, 'slow');
+            });
+
+            $(".productCategory").mouseover(function () {
+                var index = $(this).index();
+                var b = $(".productCategory").eq(index).hasClass("active");
+                if (!b) {
+                    $(".productCategory").removeClass("active");
+                    $(".productCategory").eq(index).addClass("active");
+                    $(".div-scheme-body").fadeOut(500);
+                    $("#category" + index).fadeIn(500);
+                }
+            });
+
+        });
+    </script>
+</head>
+
+<body style="margin:0px;padding:0px;background:#211737;">
+
+<!-- 两图标 -->
+<div class="ca-item-dimension"></div>
+<div class="ca-item-top"></div>
+
+<!-- 菜单 -->
+<div class="div-menu alpha">
+    <!-- 左边 -->
+    <div class="div-menu-left">
+        <img src="product_files/logo.png">
+    </div>
+    <!-- 右边 -->
+    <div class="div-menu-right">
+        <div id="HorizontalSlidingMenu">
+            <ul class="SlidingMenu Horizontal" style="position: relative;">
+                <li class="Background"
+                    style="top: 0px; left: 743px; position: absolute; z-index: 0; display: block; width: 130px; height: 100px; overflow: hidden; opacity: 0;">
+                    <div></div>
+                </li>
+                <li>
+                    <a href="contact_us.html" style="display: inline-block; position: relative;"><span class="f-style1">联系</span><br><span
+                            class="f-style2">CONTACT US</span></a>
+                </li>
+                <li>
+                    <a href="about_us.html" style="display: inline-block; position: relative;"><span
+                            class="f-style1">我们</span><br><span class="f-style2">ABOUT US</span></a>
+                </li>
+                <li>
+                    <a href="news.html" style="display: inline-block; position: relative;"><span
+                            class="f-style1">新闻</span><br><span class="f-style2">NEWS</span></a>
+                </li>
+                <li>
+                    <a href="service.html" style="display: inline-block; position: relative;"><span
+                            class="f-style1">服务</span><br><span class="f-style2">SERVICE</span></a>
+                </li>
+                <li>
+                    <a href="scheme.html" style="display: inline-block; position: relative;"><span
+                            class="f-style1">方案</span><br><span class="f-style2">SCHEMES</span></a>
+                </li>
+                <li class="  activ-menu" id="activ">
+                    <a href="product.html" style="display: inline-block; position: relative;"><span
+                            class="f-style1">产品</span><br><span class="f-style2">PRODUCTS</span></a>
+                </li>
+                <li class="bor-left">
+                    <a href="index.html" style="display: inline-block; position: relative;"><span
+                            class="f-style1">首页</span><br><span class="f-style2">HOME</span></a>
+                </li>
+            </ul>
+            <div class="ClearFix"></div>
+        </div>
+    </div>
+    <div class="ClearFix"></div>
+</div>
+
+<!-- 包裹 -->
+<div id="div-body">
+
+    <!-- 图片切换 -->
+    <div class="div-slide" style="background:url(&#39;images/product-bg.jpg&#39;) center center no-repeat;"></div>
+
+    <div class="div-scheme" style="height:auto;">
+
+        <!-- 导航 -->
+        <div class="productCategoryNav">
+            <div class="productCategory active">大数据融合</div>
+            <div class="productCategory">大数据服务支撑</div>
+            <div class="productCategory">大数据基础应用</div>
+            <div class="productCategory">大数据专题应用</div>
+        </div>
+
+        <!-- 大数据融合 -->
+        <div id="category0" class="div-scheme-body" style="height:auto;">
+
+            <!-- group-->
+            <!--<div class="list-item" style="height:auto;padding-bottom:40px;">-->
+            <!--<div class="item_left item_left_img" style="margin-top: 25px;">-->
+            <!--<img src="product_files/product-img-5.png">-->
+            <!--</div>-->
+
+            <!--<div class="item_right">-->
+            <!--<div class="title">大数据库系统</div>-->
+            <!--<div class="content" style="line-height: 24px;">采用自主研发具有处理PB级别数据量能力的数据库系统，系统基于弹性扩展架构的海量数据存储和检索系统，定位为企业级NoSQL、企业级检索平台和大数据管理集成平台；水晶分布式数据库系统是一种基于PostgreSQL的关系型数据库集群，由数个独立的数据库服务组合成的逻辑数据库，主要包括Share-Nothing无共享存储、按列式存储数据库内压缩、在线扩容、多级容错等特性。</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!-- group-->
+            <div class="list-item" style="height:auto;padding-bottom:40px;">
+                <div class="item_left item_left_img" style="margin-top: 10px;">
+                    <img src="product_files/product-img-6.png">
+                </div>
+
+                <div class="item_right">
+                    <div class="title">资源整合管理系统</div>
+                    <div class="content" style="line-height: 24px;">
+                        资源整合管理系统可将零散无序的数据通过对其进行收集、整理、去重、清洗、转换后变成标准规范的数据资源，经过数据校验和数据清理的资源将更加真实、准确、可靠，同时系统拥有可自定义的配置功能及任务管理功能，为用户提供个性化、智能化的数据整合工具及服务。
+                    </div>
+                </div>
+            </div>
+
+            <!-- group-->
+            <!--<div class="list-item" style="height:auto;padding-bottom:40px;">-->
+            <!--<div class="item_left item_left_img" style="margin-top: 12px;">-->
+            <!--<img src="product_files/product-img-21.png">-->
+            <!--</div>-->
+
+            <!--<div class="item_right">-->
+            <!--<div class="title">大数据质量管理系统</div>-->
+            <!--<div class="content" style="line-height: 24px;">大数据质量管理系统以解决数据质量参差不齐、管理不善为目的。提供数据质量监控、错误质量预警、数据质量评估等功能，提供数据质量监控模型的自定义配置，利用技术监测和业务逻辑校验，进行数据源头采集、传输、应用全流程的规范性、一致性、准确性检查，实现基于不同来源数据的逻辑校验和监测管理。</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!-- group-->
+            <!--<div class="list-item" style="height:auto;padding-bottom:40px;">-->
+            <!--<div class="item_left item_left_img" style="margin-top: 12px;">-->
+            <!--<img src="product_files/product-img-7.png">-->
+            <!--</div>-->
+
+            <!--<div class="item_right">-->
+            <!--<div class="title">大数据标准管理系统</div>-->
+            <!--<div class="content" style="line-height: 24px;">大数据标准管理系统以解决数据标准不一、数据标准管理难等问题，遵循通用标准规范及各类业务数据标准规范，提供数据标准规则策略的自定义配置、数据元管理、数据标准管理功能。对各个系统平台流通的数据进行标准监控，合规性扫描，以保证系统运行期间数据符合标准规范，保持对数据的定义与使用的一致性，减少数据转换，促进信息资源共享。</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!-- group-->
+            <!--<div class="list-item" style="height:auto;padding-bottom:40px;">-->
+            <!--<div class="item_left item_left_img">-->
+            <!--<img src="product_files/product-img-8.png">-->
+            <!--</div>-->
+
+            <!--<div class="item_right">-->
+            <!--<div class="title">资源编目系统</div>-->
+            <!--<div class="content" style="line-height: 24px;">资源编目系统是大数据资源管理的基础软件，系统利用信息整理、信息加工等技术手段分门别类地组织数据资源，即通过对分散在各地区、各级部门、各专业领域的数据资源进行核查，对这些数据按照统一的标准规范进行梳理，获得对行业的业务和数据资源全面整体的认识，建立业务与数据之间的对应关系，形成一个统一的数据资源总目录，将海量无序的数据变为有序的数据资源并输出资源目录，为使用者提供数据资源发现和定位服务，实现不同部门、不同业务数据资源的共享和管理。</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!-- group-->
+            <div class="list-item" style="height:auto;padding-bottom:40px;">
+                <div class="item_left item_left_img" style="margin-top: 5px;">
+                    <img src="product_files/product-img-9.png">
+                </div>
+
+                <div class="item_right">
+                    <div class="title">资源监控系统</div>
+                    <div class="content" style="line-height: 24px;">
+                        大数据资源监控系统是对平台硬件和软件资源进行全过程监控的系统，包括从服务器、网络、数据、应用和运行任务的全过程的可视化监控，为系统后台管理员和运维人员提供最简洁高效的可视化资源监控。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 大数据服务支撑 -->
+        <div id="category1" class="div-scheme-body" style="height:auto;display: none;">
+
+            <!--&lt;!&ndash; group&ndash;&gt;-->
+            <!--<div class="list-item" style="height:auto;padding-bottom:40px;">-->
+            <!--<div class="item_left item_left_img">-->
+            <!--<img src="product_files/product-img-11.png">-->
+            <!--</div>-->
+
+            <!--<div class="item_right">-->
+            <!--<div class="title">服务总线系统</div>-->
+            <!--<div class="content" style="line-height: 24px;">服务总线系统用于异构、分布系统的系统集成与整合，对所有集成的服务和应用实行集中管理，帮助用户实现面向服务的应用架构转型，构筑更加灵活、敏捷的业务应用环境。</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+        </div>
+
+        <!-- 大数据基础应用 -->
+        <div id="category2" class="div-scheme-body" style="height:auto;display: none;">
+
+            <!-- group-->
+            <div class="list-item" style="height:auto;padding-bottom:40px;">
+                <div class="item_left item_left_img" style="margin-top: 10px;">
+                    <img src="product_files/product-img-1.png">
+                </div>
+
+                <div class="item_right">
+                    <div class="title">大数据检索</div>
+                    <div class="content" style="line-height: 24px;">
+                        采用分布式全文检索引擎等诸多大数据技术，对海量数据进行高性能的横向关联、信息挖掘、全文索引等处理，实现PB级数据毫秒级检索返回。内置自然语言识别功能，实现类似互联网搜索引擎般简便的一键式检索服务，解决传统查询系统诸如数据查不全、相关资料不完整、信息位置不确定、数据关联关系不明确等多种问题。
+                    </div>
+                </div>
+            </div>
+
+            <!-- group-->
+            <!--<div class="list-item" style="height:auto;padding-bottom:40px;">-->
+            <!--<div class="item_left item_left_img">-->
+            <!--<img src="product_files/product-img-4.png">-->
+            <!--</div>-->
+
+            <!--<div class="item_right">-->
+            <!--<div class="title">动态智慧档案</div>-->
+            <!--<div class="content" style="line-height: 24px;">依托大数据资源库，利用数据血缘关系、关联路径算法和可视化分析展现等技术，对数据资源进行归集、处理和可视化展现，比如实现对人、车辆、通讯关系、案件等各类业务档案和文件进行自动收集、归类，建立相应电子档案。电子档案支持通过鼠标拖拽的方式完成在线配置和修改，支持将关系图、时间轴、分析图表、列表等多种表达方式有机组合，支持通过链接的方式无限关联下钻，同时，支持由人工对档案进行完善。</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!-- group-->
+            <div class="list-item" style="height:auto;padding-bottom:40px;">
+                <div class="item_left item_left_img" style="margin-top: 10px;">
+                    <img src="product_files/product-img-12.png">
+                </div>
+
+                <div class="item_right">
+                    <div class="title">大数据比对碰撞</div>
+                    <div class="content" style="line-height: 24px;">
+                        大数据比对碰撞作为发现数据关键信息的重要手段之一，利用分布式计算数据比对方式，按照系统预设或用户自定义的比对规则，实现系统汇集的海量数据集间交叉比对功能，并能实现用户自行上传数据与系统内数据资源的比对功能。支持一对一数据比对碰撞、一对多数据比对碰撞、多对多数据比对碰撞等。
+                    </div>
+                </div>
+            </div>
+
+            <!-- group-->
+            <div class="list-item" style="height:auto;padding-bottom:40px;">
+                <div class="item_left item_left_img" style="margin-top: 10px;">
+                    <img src="product_files/product-img2.png">
+                </div>
+
+                <div class="item_right">
+                    <div class="title">关系挖掘分析平台</div>
+                    <div class="content" style="line-height: 24px;">
+                        通过利用大数据技术和数据可视化技术，直观、形象的展示数据与数据之间的关系，将大量的、未知质量的、低关联性的、低价值的信息转化为少量的、易于理解的、高关联性的、高价值的、可操作的信息，帮助用户透过数据的复杂性，直接看到数据的意义，为分析调查工作提供帮助。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 大数据专题应用 -->
+        <div id="category3" class="div-scheme-body" style="height:auto;display: none;">
+
+            <!-- group-->
+            <!--<div class="list-item" style="height:auto;padding-bottom:40px;">-->
+            <!--<div class="item_left item_left_img" style="margin-top: 5px;">-->
+            <!--<img src="product_files/product-img-14.png">-->
+            <!--</div>-->
+
+            <!--<div class="item_right">-->
+            <!--<div class="title">超级人号互查系统</div>-->
+            <!--<div class="content" style="line-height: 24px;">实现人员与其背后隐藏各种号码的互通查询，同时，获取与该号码产生交集的所有关联人身份信息，并运用关联图直观展示之间的关系，在案件侦查工作中助力对目标人的信息清洗。</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+
+            <!-- group-->
+            <!--<div class="list-item" style="height:auto;padding-bottom:40px;">-->
+            <!--<div class="item_left item_left_img" style="margin-top: 5px;">-->
+            <!--<img src="product_files/product-img-17.png">-->
+            <!--</div>-->
+
+            <!--<div class="item_right">-->
+            <!--<div class="title">人员关系人分析系统</div>-->
+            <!--<div class="content" style="line-height: 24px;">人员关系人分析系统对大数据库中所有与目标人物有关联的人物进行分析，运用关联图直观、形象的展示之间的相互关系，在大数据分析应用中属于较前沿、先进、复杂的领域，广泛应用于公安案件研判工作。</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!-- group-->
+            <div class="list-item" style="height:auto;padding-bottom:40px;">
+                <div class="item_left item_left_img" style="margin-top: 12px;">
+                    <img src="product_files/product-img-20.png">
+                </div>
+
+                <div class="item_right">
+                    <div class="title">大屏展示系统</div>
+                    <div class="content" style="line-height: 24px;">
+                        大屏展示系统是一个对信息进行汇聚组合并推送到大屏的展示系统，实现与实际业务应用相结合，不仅能够满足决策者对宏观趋势、全景态势的了解，又能满足大屏指挥、联动应用的需求。通过自定义配置，能够快速将系统数据资源图表化、适应大屏硬件分辨率、页面规格；同时结合地图、视频监控、动态可视化图表、字符云等展示模式，提供丰富的大屏幕展示效果。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="div-footer">
+        <div class="div-footer-content">
+            <div class="item" style="margin-left:0px;">
+                <div class="item-title">产品</div>
+                <div class="item-content p-top-15"><a href="product.html">大数据融合</a></div>
+                <div class="item-content p-top-5"><a href="product.html">大数据服务支撑</a></div>
+                <div class="item-content p-top-5"><a href="product.html">大数据基础应用</a></div>
+                <div class="item-content p-top-5"><a href="product.html">大数据专题应用</a></div>
+            </div>
+            <div class="item">
+                <div class="item-title">方案</div>
+                <div class="item-content p-top-15"><a href="scheme.html">"大数据+垂直领域"解决方案</a></div>
+                <div class="item-content p-top-5"><a href="scheme.html">"大数据+政务领域"解决方案</a></div>
+
+            </div>
+            <div class="item">
+                <div class="item-title">服务</div>
+                <div class="item-content p-top-15"><a href="service.html">服务理念</a></div>
+                <div class="item-content p-top-5"><a href="service.html">服务方式</a></div>
+                <div class="item-content p-top-5"><a href="service.html">媒体热点</a></div>
+            </div>
+            <div class="item">
+                <div class="item-title">新闻</div>
+                <div class="item-content p-top-15"><a href="news.html">行业新闻</a></div>
+                <div class="item-content p-top-5"><a href="news.html">公司新闻</a></div>
+                <div class="item-content p-top-5"><a href="news.html">公司文化</a></div>
+            </div>
+            <div class="item">
+                <div class="item-title">我们</div>
+                <div class="item-content p-top-15"><a href="about_us.html">公司简介</a></div>
+                <div class="item-content p-top-5"><a href="news.html">企业文化</a></div>
+                <div class="item-content p-top-5"><a href="contact_us.html">联系我们</a></div>
+            </div>
+            <div class="item">
+                <div class="logo-content">
+                    <div style="margin-bottom:10px;"><img src="product_files/logo-footer.png"></div>
+                    <div class="logo1 p-top-5 t-indent-20">公司地址：甘肃省金昌市金川区经济技术开发区福州路北段</div>
+                    <div class="logo2 p-top-5 t-indent-20">商务热线/投诉电话：********</div>
+                    <div class="logo3 p-top-5 t-indent-20">传真电话：********</div>
+                </div>
+            </div>
+            <div class="ClearFix"></div>
+        </div>
+        <div class="copyright">版权所有 Copyright(C)2018 甘肃紫金云大数据开发有限责任公司</div>
+        <div style="text-align:center; font-size:15px; color:#C8C8C8;">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=***********"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <p nowrap="" style="float:right;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
+                    甘公网安备 ************号</p>
+            </a>
+            <a target="_blank" href="http://www.miitbeian.gov.cn/"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <p nowrap="" style="float:right;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
+                    陇ICP备********</p>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
