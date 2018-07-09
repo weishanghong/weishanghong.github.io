@@ -5,6 +5,7 @@
 	padding:0px;
 	font-family:"Times New Roman",Georgia,Serif;
 	overflow:auto;
+	
 }
 
 html{
@@ -129,17 +130,32 @@ html{
 #div-body .div-scheme .div-scheme-title .img_3{
 	background:url('../images/news_btn_1-2.png') no-repeat 0 0;
 }
+#div-body .div-scheme .div-scheme-title .img_3-active{
+	background:url('../images/news_btn_1.png') no-repeat 0 0;
+}
+#div-body .div-scheme .div-scheme-title .img_3:hover{
+	background:url('../images/news_btn_1.png') no-repeat 0 0;
 
+}
 #div-body .div-scheme .div-scheme-title .img_2{
 	background:url('../images/news_btn_2-2.png') no-repeat 0 0;
 }
+#div-body .div-scheme .div-scheme-title .img_2-active{
+	background:url('../images/news_btn_2.png') no-repeat 0 0;
+}
+#div-body .div-scheme .div-scheme-title .img_2:hover{
+	background:url('../images/news_btn_2.png') no-repeat 0 0;
 
+}
+#div-body .div-scheme .div-scheme-title .img_1{
+	background:url('../images/news_btn_3-2.png') no-repeat 0 0;
+}
 #div-body .div-scheme .div-scheme-title .img_1-active{
 	background:url('../images/news_btn_3.png') no-repeat 0 0;
 }
-
 #div-body .div-scheme .div-scheme-title .img_1:hover{
 	background:url('../images/news_btn_3.png') no-repeat 0 0;
+
 }
 
 #div-body .div-scheme .div-scheme-title .btn_div a{
@@ -191,7 +207,7 @@ html{
 
 #div-body .div-scheme .div-scheme-body .list-item p {
 	text-align:left;
-	text-indent:2em;
+	/*text-indent:2em;*/
 	margin: 0;
     line-height: 24px;
     font-size: 14px;
@@ -356,7 +372,7 @@ html{
 	margin:20px 19px;
 }
 #div-body .div-news .div-news-body .item .level1 {
-	display:block;
+	display:black;
 	height:105px;
 }
 #div-body .div-news .div-news-body .item .level1 img {
@@ -364,7 +380,7 @@ html{
 	height:100%;
 }
 #div-body .div-news .div-news-body .item .level2 {
-	display:block;
+	display:black;
 	height:190px;
 	background:white;
 	font-family: 'Microsoft YaHei', sans-serif;
@@ -563,9 +579,9 @@ html{
 	background:#009EDC;
 	border:1px solid #EEEEEE;
 	border-radius:10px;
-	animation: fade-in;/*动画名称*/
-    animation-duration: 0.5s;/*动画持续时间*/
-    -webkit-animation:fade-in 0.5s;/*针对webkit内核*/
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 0.5s;/*动画持续时间*/  
+    -webkit-animation:fade-in 0.5s;/*针对webkit内核*/ 
 }
 
 
@@ -580,7 +596,7 @@ html{
 	width:240px;
 	overflow:hidden;
 	font-size:17px;
-	text-align:center;
+	text-align:left;
 }
 
 #div-body .div-head .div-head-body .business-item .list-item .item a{
@@ -675,14 +691,14 @@ html{
 .activ-menu{
 	background:url('../images/menu-icon.png') repeat-x 15px 88px;
 }
-
+/*
 .alpha {
 	filter:alpha(opacity=50);
 	-moz-opacity:0.8;
 	-khtml-opacity:0.8;
 	opacity:0.8;
 }
-
+*/
 .alpha {
 
 	background-color: rgba(0,0,0,.7);

@@ -34,7 +34,7 @@ ul.Horizontal li:hover{
 	height:100px;
 	margin-right:80px;
 }
-
+/*
 #HorizontalSlidingMenu li.Background {
 	background: url('../images/bg_menu_right.png') top right no-repeat;
 }
@@ -43,7 +43,7 @@ ul.Horizontal li:hover{
 	height: 100%;
 	margin-right: 31px;
 }
-
+*/
 #HorizontalSlidingMenu li.Background {
 	background: url('../images/bg_menu.png') top center repeat-x;
 }

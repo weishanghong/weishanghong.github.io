@@ -5,9 +5,9 @@
   position: relative;
 }
 .device .arrow-right {
-	background-position: top right;
-    left: auto;
-    right: -50px;
+	background-position: top left;
+    right: auto;
+    /*right: -50px;*/
 }
 .device .arrow-left {
 	
