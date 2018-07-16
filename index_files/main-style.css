@@ -667,6 +667,9 @@ html{
 #div-body .div-footer .div-footer-content .item .logo-content .logo3 {
 	background:url('../images/footer-icon3.png') no-repeat 0px 8px;
 }
+#div-body .div-footer .div-footer-content .item .logo-content .logo4 {
+    background:url('../images/footer-icon4.png') no-repeat 0px 8px;
+}
 #div-body .div-footer .div-footer-content .item .item-title {
 	height:25px;
 	width:38px;
